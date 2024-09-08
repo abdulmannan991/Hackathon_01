@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder</title>
+    <title>Responsive Resume Builder</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
-        <form id="resumeForm">
+        <button id="toggleFormButton" class="visible">Hide Form</button>
+        <button id="toggleOutputButton" class="hidden">Show Resume</button>
+        
+        <!-- Resume Form -->
+        <form id="resumeForm" class="visible">
             <label for="name">Name:</label>
             <input type="text" id="name" required>
         
@@ -18,7 +22,7 @@
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" required>
         
-            <label for="summary">Education:</label>
+            <label for="summary">Summary:</label>
             <textarea id="summary" required></textarea>
         
             <label for="skills">Skills:</label>
@@ -27,13 +31,16 @@
             <label for="experience">Experience:</label>
             <textarea id="experience" required></textarea>
         
-            <button type="submit">Generate Resume</button>
+            <button type="submit" id="generateButton">Generate Resume</button>
         </form>
 
+        <!-- Resume Output -->
+        <div id="resumeOutput" class="resume-output hidden"></div>
         
-        <div id="resumeOutput" class="resume-output"></div>
-        
-        <script src="scripts/main.js" defer></script>
-       
+        <!-- Edit Resume Button -->
+        <button id="editButton" class="hidden">Edit Resume</button>
+    </div>
+
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
