@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -19,7 +19,6 @@ h1 {
     text-align: center;
     color: #333;
 }
-
 
 form {
     display: flex;
@@ -56,39 +55,52 @@ button:hover {
 }
 
 /* Resume Output Styling */
-.resume-output {
-    margin-top: 30px;
+#resumeOutput {
+    margin-top: 20px;
     padding: 20px;
-    border: 1px solid #007BFF;
-    background: #e9f7fe;
+    border: 1px solid #ccc;
     border-radius: 10px;
+    background: #e9f7fe;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.5s ease;
 }
 
-.resume-output h2 {
+#resumeOutput h2 {
     color: #333;
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-.resume-output p {
+#resumeOutput p {
     font-size: 16px;
     color: #555;
     margin: 5px 0;
 }
 
-.resume-output strong {
+#resumeOutput strong {
     color: #007BFF;
     font-weight: bold;
 }
 
+#editButton {
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#editButton:hover {
+    background-color: #0056b3;
+}
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
 
 @media (min-width: 768px) {
     .container {
@@ -129,11 +141,8 @@ button:hover {
         width: 100%;
     }
 
-    .resume-output {
+    #resumeOutput {
         display: flex;
         flex-direction: column;
     }
 }
-
-
-
