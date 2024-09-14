@@ -108,7 +108,7 @@ input::placeholder {
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1800px) {
     .Form {
         width: 90%; 
     }
