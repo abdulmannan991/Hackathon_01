@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Resume Builder</title>
+    <title>Responsive Resume Form</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <button id="toggleFormButton">Hide Form</button>
-        <button id="toggleOutputButton" style="display: none;">Show Resume</button>
-        
-        <!-- Resume Form -->
-        <form id="resumeForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-        
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" required>
-        
-            <label for="summary">Summary:</label>
-            <textarea id="summary" required></textarea>
-        
-            <label for="skills">Skills:</label>
-            <input type="text" id="skills" required>
-        
-            <label for="experience">Experience:</label>
-            <textarea id="experience" required></textarea>
-        
-            <button type="submit" id="generateButton">Generate Resume</button>
-        </form>
 
-       
+    <div class="formcontainer">
+        <form action="#" class="Form">
+           <fieldset class="field">
+            <legend class="legendf">
+                Personal info
+            </legend>
+
+            <div class="group">
+            <label class="labe" for="name">Name</label>
+            <input class="labe" type="name" required = "required">
+        </div>
+
+        <div class="group">
+            <label class="labe" for="email">Email</label>
+            <input class="labe" type="email" required = "required">
+            </div>
+
+            <div class="group">
+                <label class="labe" for="Phone">Phone</label>
+                <input class="labe" type="number" required = "required">
+             
+        </div>
+        <div class="group">
+            <label class="labe" for="Education">Education</label>
+            <input class="labe" type="text" required = "required">
+        </div>
+            <div class="group">
+
+            <label class="labe" for="Experience">Experience</label>
+            <input class="labe" type="text" required = "required">
+</div>
+
+<div class="group">
+            <label class="labe" for="Skills">Skills</label>
+            <input class="labe" type="text" required = "required">
+            </div>
+
+            
+<button class="btn">Generate Resume</button>
+
+           </fieldset>
+        </form>
+    </div>
 </body>
 </html>
+ 
