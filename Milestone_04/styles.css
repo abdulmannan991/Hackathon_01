@@ -90,6 +90,16 @@ input::placeholder {
     cursor: pointer;
 }
 
+.profilepicture {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid aquamarine;
+    box-shadow: 0 4px 8px blue;
+    border-radius: 50%; 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 #resume {
     margin-top: 20px;
     padding: 20px;
